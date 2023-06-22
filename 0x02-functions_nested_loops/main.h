@@ -26,7 +26,7 @@ int sum_of_multiples(void);
 int _putchar(char c);
 void print_fibonacci(void);
 
-int fibonacci_sum_even(int limit);
-int fibo(void);
+int main(void, int limit)
+int main(void);
 
 #endif /* MAIN_H */
