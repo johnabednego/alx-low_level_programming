@@ -44,7 +44,6 @@ fib2 = fib_next;
 
 _putchar('\n');
 
-int fibonacci_sum_even(int limit);
 
 return (0);
 }
