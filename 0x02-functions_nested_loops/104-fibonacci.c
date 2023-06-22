@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * fibo - Entry point
  *
  * Return: Always 0
  */
-int main(void)
+int fibo(void)
 {
 int i;
 unsigned long int fib1 = 1, fib2 = 2, fib_next;
