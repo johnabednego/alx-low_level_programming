@@ -6,7 +6,7 @@
  *
  * Return: The sum of even-valued terms.
  */
-int fibonacci_sum_even(int limit)
+int main(int limit)
 {
 int current = 1;
 int previous = 1;
