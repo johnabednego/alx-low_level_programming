@@ -26,7 +26,6 @@ int sum_of_multiples(void);
 int _putchar(char c);
 void print_fibonacci(void);
 
-int main(int limit);
 int main(void);
 
 #endif /* MAIN_H */

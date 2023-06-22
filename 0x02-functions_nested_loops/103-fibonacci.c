@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * main - Calculates the sum of even-valued terms in the Fibonacci sequence.
+ * fibonacci_sum_even - Calculates the sum of even-valued terms in the Fibonacci sequence.
  * @limit: The maximum value for Fibonacci terms.
  *
  * Return: The sum of even-valued terms.
  */
-int main(int limit)
+int fibonacci_sum_even(int limit)
 {
 int current = 1;
 int previous = 1;
