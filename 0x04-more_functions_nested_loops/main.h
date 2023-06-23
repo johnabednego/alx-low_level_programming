@@ -14,5 +14,9 @@ void print_square(int size);
 int _putchar(char c);
 int main(void);
 void print_triangle(int size);
+int entry(void);
+void print_number(int n);
+int _putchar(char c);
+
 
 #endif /* MAIN_H */
