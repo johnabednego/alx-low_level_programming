@@ -18,9 +18,9 @@ srand(time(0));
 
 for (i = 0; i < PASSWORD_LENGTH; i++)
 {
-password[i] = rand() % 94 + 33; // Generate a random printable ASCII character
+password[i] = rand() % 94 + 33; /* Generate a random printable ASCII character */
 }
-password[i] = '\0'; // Add null terminator at the end of the password
+password[i] = '\0'; /* Add null terminator at the end of the password */
 
 printf("%s\n", password);
 
