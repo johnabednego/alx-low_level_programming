@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strlen - Returns the length of a string
@@ -35,9 +36,9 @@ i = (length + 1) / 2;
 
 while (str[i] != '\0')
 {
-_putchar(str[i]);
+putchar(str[i]);
 i++;
 }
 
-_putchar('\n');
+putchar('\n');
 }
