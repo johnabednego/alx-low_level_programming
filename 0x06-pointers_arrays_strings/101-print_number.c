@@ -10,7 +10,7 @@ unsigned int num;
 
 if (n < 0)
 {
-_putchar('-');
+printf('-');
 num = -n;
 }
 else
@@ -23,5 +23,5 @@ if (num / 10)
 print_number(num / 10);
 }
 
-_putchar((num % 10) + '0');
+printf((num % 10) + '0');
 }
