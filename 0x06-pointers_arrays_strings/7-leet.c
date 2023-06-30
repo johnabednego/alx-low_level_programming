@@ -26,5 +26,5 @@ break;
 i++;
 }
 
-return str;
+return (str);
 }

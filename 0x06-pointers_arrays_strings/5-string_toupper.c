@@ -19,5 +19,5 @@ str[i] = str[i] - 32; // Convert lowercase letter to uppercase
 i++;
 }
 
-return str;
+return (str);
 }
