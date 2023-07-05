@@ -1,8 +1,11 @@
 #include "main.h"
 
 /**
- * _print_rev_recursion - Prints a string in reverse
- * @s: The string to be printed
+ * _putchar - Writes a character to the standard output (stdout)
+ * @c: The character to be written
+ *
+ * Return: On success, returns the character written.
+ * On error, returns -1 and sets errno appropriately.
  */
 int _putchar(char c);
 
