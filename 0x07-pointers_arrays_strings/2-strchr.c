@@ -3,10 +3,9 @@
 /**
  * _strchr - Locates a character in a string
  * @s: Pointer to the string
- * @c: The character to be located
+ * @c: Character to locate
  *
- * Return: Pointer to the first occurrence of the character (c) in the string (s),
- *         or NULL if the character is not found
+ * Return: Pointer to the first occurrence of @c in @s, or NULL if not found
  */
 char *_strchr(char *s, char c)
 {
@@ -20,5 +19,5 @@ s++;
 if (*s == c)
 return (s);
 
-return;
+return (NULL);
 }
