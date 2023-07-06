@@ -14,6 +14,25 @@ return (1 + _strlen(s + 1));
 }
 
 /**
+* is_palindrome_recursive - Recursive helper function to check if a string is a palindrome
+* @s: The string to check
+* @start: The starting index of the substring to check
+* @end: The ending index of the substring to check
+*
+* Return: 1 if the substring is a palindrome, 0 otherwise
+*/
+int is_palindrome_recursive(char *s, int start, int end)
+{
+if (start >= end)
+return (1);
+
+if (s[start] != s[end])
+return (0);
+
+return (is_palindrome_recursive(s, start + 1, end - 1));
+}
+
+/**
 * is_palindrome - Checks if a string is a palindrome
 * @s: The string to check
 *
@@ -26,9 +45,5 @@ int len = _strlen(s);
 if (len <= 1)
 return (1);
 
-if (*s != s[len - 1])
-return (0);
-
-s[len - 1] = '\0';
-return (is_palindrome(s + 1));
+return (is_palindrome_recursive(s, 0, len - 1));
 }
