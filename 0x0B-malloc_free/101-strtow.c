@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-
 /**
  * count_words - Counts the number of words in a string.
  * @str: The string to count words in
@@ -14,7 +13,6 @@ int i = 0;
 
 while (str[i] != '\0')
 {
-/* Skip leading spaces */
 while (str[i] == ' ')
 i++;
 
@@ -22,13 +20,29 @@ if (str[i] != '\0')
 {
 count++;
 
-/* Skip word characters */
 while (str[i] != ' ' && str[i] != '\0')
 i++;
 }
 }
 
 return (count);
+}
+
+/**
+* copy_word - Copies a word from the source string to the destination string.
+* @src: The source string containing the word
+* @start: The starting index of the word in the source string
+* @end: The ending index of the word in the source string
+* @dest: The destination string to copy the word to
+*/
+void copy_word(char *src, int start, int end, char *dest)
+{
+int i;
+
+for (i = start; i < end; i++)
+dest[i - start] = src[i];
+
+dest[i - start] = '\0';
 }
 
 /**
@@ -62,13 +76,11 @@ k = 0;
 
 while (str[i] != '\0' && k < word_count)
 {
-/* Skip leading spaces */
 while (str[i] == ' ')
 i++;
 
 j = i;
 
-/* Calculate word length */
 while (str[i] != ' ' && str[i] != '\0')
 {
 word_length++;
@@ -79,17 +91,13 @@ words[k] = malloc(sizeof(char) * (word_length + 1));
 
 if (words[k] == NULL)
 {
-/* Free memory for already allocated words */
 for (i = 0; i < k; i++)
 free(words[i]);
 free(words);
 return (NULL);
 }
 
-/* Copy word to words[k] */
-for (j = 0; j < word_length; j++)
-words[k][j] = str[i - word_length + j];
-words[k][j] = '\0';
+copy_word(str, j, i, words[k]);
 
 word_length = 0;
 k++;
